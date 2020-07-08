@@ -4,15 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
-    "test": "echo \"Error: no test specified\" && exit 1"
-=======
     "test": "npm run lint",
     "start": "node server.js",
     "lint": "eslint --quiet .",
     "fix": "eslint --fix .",
     "watch": "nodemon server.js"
->>>>>>> 8e4b61a6a7677d3b83e40623c68c5ecc05618469
   },
   "repository": {
     "type": "git",
@@ -26,9 +22,6 @@
   },
   "homepage": "https://github.com/billyhao12/Project-2#readme",
   "dependencies": {
-<<<<<<< HEAD
-    "dotenv": "^8.2.0"
-=======
     "bcryptjs": "2.4.3",
     "express": "^4.17.0",
     "express-session": "^1.16.1",
@@ -46,6 +39,5 @@
     "eslint-plugin-prettier": "^2.6.2",
     "mocha": "^5.2.0",
     "prettier": "^1.13.7"
->>>>>>> 8e4b61a6a7677d3b83e40623c68c5ecc05618469
   }
 }
