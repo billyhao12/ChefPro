@@ -1,0 +1,32 @@
+h2{
+    padding-top: .5em;
+    padding-bottom: .5em;
+
+}
+
+.navbar{
+    padding-left: 85px;
+    background-color: #676767;
+}
+
+.navbar-toggler{
+    color: white;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar-nav{
+    flex-direction: none;
+}
+
+.homepage_options{
+    height: 200px;
+    width: 200px;
+    border-radius: 20pt;
+    background-color: #ffb3b3;
+    font-size: larger;
+    border-color: red;
+    margin-right: .5em;
+}
