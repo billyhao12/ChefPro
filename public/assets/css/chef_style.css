@@ -29,4 +29,11 @@ h2{
     font-size: larger;
     border-color: red;
     margin-right: .5em;
+    margin-bottom: .5em;
+}
+
+@media (max-width: 992px){
+    .nav-item{
+        display: on;
+    }
 }

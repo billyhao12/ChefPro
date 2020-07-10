@@ -1,0 +1,23 @@
+<h2>Search for a Recipe!</h2>
+
+
+<form id="" action="" method="GET">
+    <input type="text" name="Title">
+    <button>Dish Search</button>
+    <input type="text" name="Author">
+    <button>Chef Search</button>
+    <input type="text" name="ingredients">
+    <button>Ingredients Search</button>
+</form>
+
+<h2>Recipes</h2>
+<ul id="">
+{{#each recipe}}
+    <li>
+        <h2>Title: </h2>{{title}}
+        <h3>Chef: </h3>{{author}}
+        <h3>Ingredients: </h3>{{ingredients}}
+        <h3>directions: </h3>{{directions}}
+    </li>
+{{/each}}
+</ul>
