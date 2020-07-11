@@ -9,5 +9,6 @@ CREATE TABLE recipes (
     author VARCHAR(50) NOT NULL,
     ingredients LONGTEXT NOT NULL,
     instructions LONGTEXT NOT NULL,
-    PRIMARY KEY (id)
+    PRIMARY KEY (id),
+    FOREIGN KEY (UserId) REFERENCES users(id)
 )
