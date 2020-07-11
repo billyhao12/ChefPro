@@ -1,4 +1,5 @@
 require("dotenv").config();
+const exphbs = require("express-handlebars");
 
 // Requiring necessary npm packages
 const express = require("express");
@@ -37,8 +38,19 @@ db.sequelize.sync().then(() => {
   });
 });
 
-// db.connect({
-//   host: process.env.DB_HOST,
-//   username: process.env.DB_USER,
-//   password: process.env.DB_PASS
-// });
+//trying to get handlebars to work
+
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
+
+app.get("/search", (req, res) => {
+  console.log("search is working!");
+  res.render("query");
+  // res.render("query", );
+});
+
+app.get("/add", (req, res) => {
+  console.log("add is working!");
+  res.render("add");
+  // res.render("query", );
+});
