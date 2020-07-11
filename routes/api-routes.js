@@ -50,4 +50,24 @@ module.exports = function(app) {
       });
     }
   });
+
+  // get all recipes of a user
+  app.get("/api/recipes", (req, res) => {
+    db.Recipe.findAll({}).then(dbRecipe => {
+      res.json(dbRecipe);
+      console.log(dbRecipe);
+    });
+  });
+
+  // post a new recipe
+  app.post("/api/recipes", (req, res) => {
+    db.Recipe.create({
+      title: req.body.title,
+      author: req.body.author,
+      ingredients: req.body.ingredients,
+      instructions: req.body.instructions
+    }).then(dbRecipe => {
+      res.json(dbRecipe);
+    });
+  });
 };
