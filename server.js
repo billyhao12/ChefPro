@@ -54,3 +54,8 @@ app.get("/add", (req, res) => {
   res.render("add");
   // res.render("query", );
 });
+
+app.get("/homepage", (req, res) => {
+  console.log("homepage is working!");
+  res.render("homepage");
+});
