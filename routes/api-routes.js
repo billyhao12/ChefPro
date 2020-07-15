@@ -55,7 +55,6 @@ router.get("/api/user_data", (req, res) => {
 router.get("/api/recipes", (req, res) => {
   db.Recipe.findAll({}).then(dbRecipe => {
     res.json(dbRecipe);
-    console.log(dbRecipe);
   });
 });
 
@@ -66,6 +65,17 @@ router.post("/api/recipes", (req, res) => {
     author: req.body.author,
     ingredients: req.body.ingredients,
     instructions: req.body.instructions
+  }).then(dbRecipe => {
+    res.json(dbRecipe);
+  });
+});
+
+// search for a recipe by name
+router.get("/api/recipes/:recipe", (req, res) => {
+  db.Recipe.findAll({
+    where: {
+      title: req.params.recipe
+    }
   }).then(dbRecipe => {
     res.json(dbRecipe);
   });
