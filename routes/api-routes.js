@@ -52,12 +52,14 @@ router.get("/api/user_data", (req, res) => {
 });
 
 // get two most recent recipes
-router.get("/api/recipes", (req, res) => {
+router.get("/homepage", (req, res) => {
   db.Recipe.findAll({
     order: [["createdAt", "DESC"]],
     limit: 2
   }).then(dbRecipe => {
-    res.json(dbRecipe);
+    res.render("homepage", {
+      recipe: dbRecipe
+    });
   });
 });
 
