@@ -37,14 +37,48 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-md-offset-2">
+
+      <div class="col-md-6">
         <h2>What would you like to do?</h2>
-        <button><a class="homepage_options" href="/Search">Search For Recipes</a></button>
-        <button><a class="homepage_options" href="/Add">Add a New Recipe</a></button>
+        <a href="/search"><button class="homepage_options">Search For Recipes</button></a>
+        <a href="/add"><button class="homepage_options">Add a New Recipe</button></a>
+      </div>
+
+      <div class="col-md-6">
+        <h2>Here is where we can display the User's recipes:</h2>
+        <div class="auto_display" data-index="1">
+          <h3 class="title">Recipe Title</h3>
+          <br>
+          <h4>Chef:</h4>
+          <h5 class="author"></h5>
+          <br>
+          <h4>Ingredients:</h4>
+          <p class="ingredients"></p>
+          <br>
+          <h4>Instructions:</h4>
+          <p class="Instructions"></p>
+        </div>
+
+        <div class="auto_display" data-index="2">
+          <h3 class="title">Recipe Title</h3>
+          <br>
+          <h4>Chef:</h4>
+          <h5 class="author"></h5>
+          <br>
+          <h4>Ingredients:</h4>
+          <p class="ingredients"></p>
+          <br>
+          <h4>Instructions:</h4>
+          <p class="Instructions"></p>
+        </div>
+
 
       </div>
+
     </div>
   </div>
+
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/login.js"></script>
