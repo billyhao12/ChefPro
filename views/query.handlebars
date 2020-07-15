@@ -1,23 +1,31 @@
-<h2>Search for a Recipe!</h2>
+<div class="col-md-6">
+    <h2>Search for a Recipe!</h2>
 
 
-<form id="" action="" method="GET">
-    <input type="text" name="Title">
-    <button>Dish Search</button>
-    <input type="text" name="Author">
-    <button>Chef Search</button>
-    <input type="text" name="ingredients">
-    <button>Ingredients Search</button>
-</form>
+    <form id="" action="" method="GET">
+        <h4>Search by name of the Dish:</h4>
+        <input type="text" name="Title">
+        <button type="submit" class="submit">Dish Search</button>
+        <br>
+        <h4>Search by name of the Chef:</h4>
+        <input type="text" name="Author">
+        <button type="submit" class="submit">Chef Search</button>
+        <h4>Search by an ingredient</h4>
+        <input type="text" name="ingredients">
+        <button type="submit" class="submit">Ingredients Search</button>
+    </form>
+</div>
 
-<h2>Recipes</h2>
-<ul id="">
-{{#each recipe}}
-    <li>
-        <h2>Title: </h2>{{title}}
-        <h3>Chef: </h3>{{author}}
-        <h3>Ingredients: </h3>{{ingredients}}
-        <h3>directions: </h3>{{directions}}
-    </li>
-{{/each}}
-</ul>
+<div class="col-md-6 toggle" >
+    <h2>Recipes</h2>
+    <ul id="">
+    {{#each recipe}}
+        <li>
+            <h2>Title: </h2>{{title}}
+            <h3>Chef: </h3>{{author}}
+            <h3>Ingredients: </h3>{{ingredients}}
+            <h3>directions: </h3>{{directions}}
+        </li>
+    {{/each}}
+    </ul>
+</div>
