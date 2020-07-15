@@ -25,9 +25,9 @@ h2{
     height: 200px;
     width: 200px;
     border-radius: 20pt;
-    background-color: #ffb3b3;
+    background-color: rgb(224, 221, 221);
     font-size: larger;
-    border-color: red;
+    border-color: grey;
     margin-right: .5em;
     margin-bottom: .5em;
 }
@@ -36,4 +36,16 @@ h2{
     .nav-item{
         display: on;
     }
+}
+
+.auto_display{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.title{
+    text-align: center;
 }
