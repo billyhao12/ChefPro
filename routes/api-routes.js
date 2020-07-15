@@ -51,9 +51,12 @@ router.get("/api/user_data", (req, res) => {
   }
 });
 
-// get all recipes of a user
+// get two most recent recipes
 router.get("/api/recipes", (req, res) => {
-  db.Recipe.findAll({}).then(dbRecipe => {
+  db.Recipe.findAll({
+    order: [["createdAt", "DESC"]],
+    limit: 2
+  }).then(dbRecipe => {
     res.json(dbRecipe);
   });
 });
