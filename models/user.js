@@ -32,11 +32,11 @@ module.exports = function(sequelize, DataTypes) {
     );
   });
 
-  User.associate = models => {
-    User.hasMany(models.Recipe, {
-      onDelete: "cascade"
-    });
-  };
+  // User.associate = models => {
+  //   User.hasMany(models.Recipe, {
+  //     onDelete: "cascade"
+  //   });
+  // };
 
   return User;
 };
