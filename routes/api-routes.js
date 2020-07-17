@@ -64,14 +64,10 @@ router.get("/homepage", (req, res) => {
 });
 
 // post a new recipe
-router.post("/api/recipes", (req, res) => {
-  db.Recipe.create({
-    title: req.body.title,
-    author: req.body.author,
-    ingredients: req.body.ingredients,
-    instructions: req.body.instructions
-  }).then(dbRecipe => {
-    res.json(dbRecipe);
+router.post("/api/addrecipe", (req, res) => {
+  db.Recipe.create(req.body, dbRecipe => {
+    console.log(dbRecipe);
+    res.json({ id: dbRecipe.insertId });
   });
 });
 
