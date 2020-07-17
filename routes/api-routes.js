@@ -76,13 +76,15 @@ router.post("/api/recipes", (req, res) => {
 });
 
 // search for a recipe by name
-router.get("/api/recipes/:recipe", (req, res) => {
+router.get("/recipes/:recipe", (req, res) => {
   db.Recipe.findAll({
     where: {
       title: req.params.recipe
     }
   }).then(dbRecipe => {
-    res.json(dbRecipe);
+    res.render("query", {
+      recipe: dbRecipe
+    });
   });
 });
 
