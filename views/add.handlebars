@@ -2,30 +2,19 @@
     <h2>Add A Recipe!</h2>
 
 
-    <form id="" action="" method="POST">
+    <form id="addRecipe" action="/api/addrecipe" method="POST">
         <h4 class="prompts">Give your creation a title:</h3>
         <input type="text" name="title">
+
+        <h4 class="prompts">Chef name:</h3>
+        <input type="text" name="author">
+
         <h4 class="prompt">Ingredient list:</h3>
         <input type="text" name="ingredients" id="ingredients">
+
         <h4 class="prompt">Instructions:</h4>
-        <input type="text" name="directions" id="instructions">
+        <input type="text" name="instructions" id="instructions">
+
         <button type="submit" class="submit">Add Recipe</button>
     </form>
 </div>
-<script>
-
-$("").on("submit", (e)=>{
-
-    e.preventDefault();
-
-    $.ajax({
-        url: "",
-        method: "",
-        data: 
-    }).then(()=>{
-        location.reload();
-    })
-
-});
-
-</script>
