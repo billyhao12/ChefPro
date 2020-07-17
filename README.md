@@ -15,6 +15,9 @@ Application is open source and free to use.
 
 Git clone the repository from Github to your local PC. Run npm install. Open your MySQL and update the config.json password. Run sequeliaze.
 
+## Screenshots
+
+![Homepage](public/assets/images/homepage.png)
 
 ## Contributors
 
@@ -25,3 +28,10 @@ Aidan Quigley
 
 ### Constructed with 
 Microsoft Visual Studio Code.
+
+
+
+
+
+
+README constructed by Ju Yu Lee
