@@ -13,7 +13,11 @@ Application is open source and free to use.
 
 ## Installation
 
-Git clone the repository from Github to your local PC. Run npm install. Open your MySQL and update the config.json password. Run sequeliaze.
+Git clone the repository from Github to your local PC. Run npm install. Open your MySQL and update the config.json password. Run sequeliaze. To view the live version of this application go [here](https://uw-project-2.herokuapp.com/). 
+
+## Getting started
+
+The project was developed using microsoft visual studio code. It is a node.js application with a number of dependencies that can be viewed in the package.json file. A basic understand of sql databases and handelbar templating along with a cursory knowledge of javascript are helpful in understanding this application
 
 ## Screenshots
 
