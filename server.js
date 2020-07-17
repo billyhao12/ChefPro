@@ -1,4 +1,5 @@
 require("dotenv").config();
+const path = require("path");
 const exphbs = require("express-handlebars");
 
 // Requiring necessary npm packages
@@ -50,8 +51,12 @@ app.get("/search", (req, res) => {
 });
 
 app.get("/add", (req, res) => {
-  console.log("add is working!");
-  res.render("add");
+  if (req.user) {
+    res.render("add");
+  } else {
+    res.sendFile(path.join(__dirname, "./public/login.html"));
+  }
+
   // res.render("query", );
 });
 
