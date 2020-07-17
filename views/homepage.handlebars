@@ -13,16 +13,18 @@
         {{#each recipe}}
 
         <div class="auto_display" data-index="{{dataValues.id}}">
-          <h3 class="title">{{dataValues.title}}</h3>
-          <br>
-          <h4>Chef:</h4>
-          <h5 class="author">{{dataValues.author}}</h5>
-          <br>
-          <h4>Ingredients:</h4>
-          <p class="ingredients">{{dataValues.ingredients}}</p>
-          <br>
-          <h4>Instructions:</h4>
-          <p class="Instructions">{{dataValues.instructions}}</p>
+          <div class="extra_div">
+            <h3 class="title">{{dataValues.title}}</h3>
+            <br>
+            <h4>Chef:</h4>
+            <h5 class="author">{{dataValues.author}}</h5>
+            <br>
+            <h4>Ingredients:</h4>
+            <p class="ingredients">{{dataValues.ingredients}}</p>
+            <br>
+            <h4>Instructions:</h4>
+            <p class="Instructions">{{dataValues.instructions}}</p>
+          </div>
         </div>
 
         {{/each}}

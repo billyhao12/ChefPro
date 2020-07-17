@@ -7,7 +7,7 @@
         <button type="submit" class="submit">Dish Search</button>
     </form>
 
-    <form id="" action="" method="GET">
+    {{!-- <form id="" action="" method="GET">
         <h4>Search by name of the chef:</h4>
         <input type="text" name="Author">
         <button type="submit" class="submit">Chef Search</button>
@@ -17,20 +17,30 @@
         <h4>Search by an ingredient:</h4>
         <input type="text" name="ingredients">
         <button type="submit" class="submit">Ingredients Search</button>
-    </form>
+    </form> --}}
     
 </div>
 
 <div class="col-md-6">
-    <h2>Recipes</h2>
-    <ul id="">
-    {{#each recipe}}
-        <li>
-            <h2>Title: </h2>{{dataValues.title}}
-            <h3>Chef: </h3>{{dataValues.author}}
-            <h3>Ingredients: </h3>{{dataValues.ingredients}}
-            <h3>Instructions: </h3>{{dataValues.instructions}}
-        </li>
-    {{/each}}
-    </ul>
+
+
+{{#each recipe}}
+
+<div class="auto_display" data-index="{{dataValues.id}}">
+    <div class="extra_div">
+    <h3 class="title">{{dataValues.title}}</h3>
+    <br>
+    <h4>Chef:</h4>
+    <h5 class="author">{{dataValues.author}}</h5>
+    <br>
+    <h4>Ingredients:</h4>
+    <p class="ingredients">{{dataValues.ingredients}}</p>
+    <br>
+    <h4>Instructions:</h4>
+    <p class="Instructions">{{dataValues.instructions}}</p>
+    </div>
+</div>
+
+{{/each}}
+
 </div>
