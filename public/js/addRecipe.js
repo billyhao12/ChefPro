@@ -18,9 +18,11 @@ $(document).ready(() => {
     };
 
     $.ajax({
-      url: "/api/addrecipe",
+      url: "/api/addRecipe",
       method: "POST",
       data: recipeData
+    }).then(() => {
+      location.reload();
     });
   });
 });
