@@ -20,7 +20,5 @@ CREATE TABLE recipes (
     instructions LONGTEXT NOT NULL,
     createdAt DATE NOT NULL,
     updatedAt DATE NOT NULL,
-    UserId INT NOT NULL,
-    PRIMARY KEY (id),
-    FOREIGN KEY (UserId) REFERENCES users(id)
+    PRIMARY KEY (id)
 );
