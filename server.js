@@ -28,7 +28,7 @@ app.use(passport.session());
 
 // Requiring our routes
 app.use(require("./routes/html-routes.js"));
-app.use(require("./dist"));
+app.use(require("./routes/api-routes.js"));
 
 // Compression
 app.use(compression());
